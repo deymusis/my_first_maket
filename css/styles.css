@@ -64,29 +64,6 @@ ul {
 	margin-top:22px;
 }
 
-.nav-menu li a:nth-child(1) {
-    font-size: 15px;
-    padding: 7px 34px;
-    font-weight: 200;
-}
-
-.nav-menu li:nth-child(2) {
-    margin-top: 5px;
-    margin-right: 20px;
-    width: 107px;
-    height: 37px;
-    color: #fff;
-    border: 1px solid;
-    border-radius: 2px;
-    text-decoration: none;
-}
-
-
-.nav-menu li {
-	float: left;
-	margin-right: 20px;
-}
-
 a, a:hover {
 	text-decoration: none;
 	color: #fff;
@@ -125,9 +102,9 @@ a, a:hover {
 	background-color: #fff;
     border: 1px solid #f3f3f3;
     border-radius: 3px;
-    padding: 30px 20px;
+    padding: 15px 20px;
     padding-bottom: 8px;
-    margin-top: 98px;
+	margin-top: 98px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     z-index: 2;
@@ -137,7 +114,7 @@ a, a:hover {
 	position: relative;
 	height: 15px;
 	width: 313px;
-	padding-top: 30px;
+	padding: 15px 20px;
 	margin-right: -4.5px;
 }
 
@@ -155,12 +132,12 @@ a, a:hover {
 .btn-start {
 	text-align: center;
 	display: inline-block;
-	height: 20.4px;
+	height: 34px;
 	width: 217px;
 	background-color: #f16240;
 	color: #fff;
 	border: none;
-	padding-top: 29.6px;
+	padding-top: 15.0px;
 }
 
 
