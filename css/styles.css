@@ -1,0 +1,568 @@
+body {
+	margin: 0;
+	padding: 0;
+	/*height: 100%;*/
+}
+
+
+
+
+
+/*шапка сайта*/
+
+.wrapper {                                                  
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	background: url(../img/shutterstoke.jpg) no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: 0;
+}
+
+.menu {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	padding-top: 15px;
+}
+
+.nav-menu {
+	float: right;
+	padding-top: 15px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-menu li:first-child {
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+    background: url(../img/lang.png) no-repeat left 2px transparent;
+}
+
+.nav-menu li a:nth-child(1) {
+    font-size: 15px;
+    padding: 7px 34px;
+    font-weight: 200;
+}
+
+.nav-menu li:nth-child(2) {
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 107px;
+    height: 37px;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+
+.nav-menu li {
+	float: left;
+	margin-right: 20px;
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.info-site {
+	display: block;
+	position: relative;
+	color: #fff;
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 95px;
+}
+
+.nav-info {
+	float: right;
+	margin-right: 617px; 
+}
+
+.nav-info>li {
+	margin-top: 28px;
+}
+
+.nav-info>li:first-child {
+	margin-top: 0;
+}
+
+
+
+
+
+/*подписка*/
+
+.subs {
+	position: relative;
+	background-color: #fff;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    padding: 30px 20px;
+    padding-bottom: 8px;
+    margin-top: 98px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    z-index: 2;
+}
+
+.form {
+	position: relative;
+	height: 15px;
+	width: 313px;
+	padding-top: 30px;
+	margin-right: -4.5px;
+}
+
+.subs span {
+	color: #000;
+	padding-left: 32px;
+	padding-right: 15px;
+}
+
+.fix {
+	margin-left: 10px;
+	margin-top: -20px;
+}
+
+.btn-start {
+	text-align: center;
+	display: inline-block;
+	height: 20.4px;
+	width: 217px;
+	background-color: #f16240;
+	color: #fff;
+	border: none;
+	padding-top: 29.6px;
+}
+
+.btn-social {
+	display: inline;
+}
+
+.goo {
+	display: inline-block;
+	margin: 0 5px;
+	margin-top: 20px;
+    width: 104px;
+    height: 41px;
+    border: 1px solid #f3f3f3;
+    border-radius: 3%;
+	background: url(../img/Google.png) no-repeat;
+	background-position: -5px 0;
+}
+
+
+
+
+
+/*корявенький спрайтик*/
+
+.fb {                                              
+	display: inline-block;
+	margin: 0 5px;
+    width: 41px;
+    height: 41px;
+    border: 1px solid #f3f3f3;
+    border-radius: 3%;
+	background: url(../img/Sprite.png) no-repeat;
+	background-position: -6px 0;
+}
+
+.in {
+	display: inline-block;
+	margin: 0 5px;
+    width: 41px;
+    height: 41px;
+    border: 1px solid #f3f3f3;
+    border-radius: 3%;
+	background: url(../img/Sprite.png) no-repeat;
+	background-position: -60px 0;
+}
+
+
+
+
+
+/*галочки*/
+
+.chb-agree {                                           
+	position: relative;
+	display: block;
+	padding-top: 10px;
+	padding-left: 5px;
+	color: #000;
+}
+
+.chb-agree a {
+	color: #f16240;
+}
+
+
+
+
+
+/*Create*/
+
+.create, .share, .extend, .access, .customer {
+	background: #fff;
+    padding-bottom: 153px;
+    height: 100px;
+    width: 960px;
+	margin: 0 auto;
+}
+
+.underline {
+	position: relative;
+	padding-bottom: -115px;
+}
+
+.create h1, .share h1, .extend h1, .access h1, .customer {
+	color: #343434;
+}
+
+.create h2 {
+	margin-top: 63px;
+	color: #444444;
+}
+
+.create p {
+	margin-top: 25px;
+	color: #444444;
+}
+
+
+
+
+
+/*первая карусель*/
+
+.carousel {
+	background: #fff;
+	margin: 0 auto;
+}
+
+/*.custom-container a:nth-child(1) {
+    margin-left: 5px;
+    margin-bottom: 260px;
+}
+
+.custom-container a:nth-child(2) {
+	margin-left: 5px;
+    margin-bottom: 260px;
+    margin-left: 955px;
+}*/
+
+.carousel img {
+	width: 960px;
+	height: 488px;
+}
+
+.btn-slide {
+	margin-left: 420px;
+}
+
+.prev, .next, .go {
+	/*margin-left: 230px;*/
+	color: #f0623e;
+	margin: 0 5px 0 0;
+    padding: 7px 5px 0 5px;
+}
+
+.go {
+	font-size: 32px;
+	color: #f8b19f;
+}
+
+.go:hover {
+	color: #f0623e;
+}
+
+/*не могу разобраться с активностью*/
+
+.go:focus {
+	font-size: 48px;
+	color: #f0623e;
+}
+
+
+
+
+
+/*возможности*/
+
+/*пока корявый код*/
+
+.capabilities {
+	background: #fff;
+    padding-bottom: 153px;
+    height: 100px;
+    width: 960px;
+	margin: 0 auto;
+	left: 100px;
+	margin-top: 40px;
+}
+
+.wrap {
+	display: inline-block;
+	width: 250px;
+}
+
+.w-two, .w-three {
+	margin-left: 100px;
+}
+
+.capabilities img {
+	margin-left: 50px;
+	width: 35%;
+	height: 35%;
+}
+
+.capabilities p {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+/*Share*/
+
+.share {
+	margin-top: 60px;
+	background: #f7f7f7;
+}
+
+.wr-share {
+	background: #f7f7f7;
+}
+
+
+
+
+
+/*вторая карусель*/
+
+.carousel {
+	background: #fff;
+	margin: 0 auto;
+}
+
+/*.custom-container a:nth-child(1) {
+    margin-left: 5px;
+    margin-bottom: 260px;
+}
+
+.custom-container a:nth-child(2) {
+	margin-left: 5px;
+    margin-bottom: 260px;
+    margin-left: 955px;
+}*/
+
+/*.carousel img {
+	width: 960px;
+	height: 488px;
+}*/
+
+.btn-slide {
+	margin-left: 420px;
+}
+
+.prev, .next, .go {
+	/*margin-left: 230px;*/
+	color: #f0623e;
+	margin: 0 5px 0 0;
+    padding: 7px 5px 0 5px;
+}
+
+.go {
+	font-size: 32px;
+	color: #f8b19f;
+}
+
+.go:hover {
+	color: #f0623e;
+}
+
+/*не могу разобраться с активностью*/
+
+.go:focus {
+	font-size: 48px;
+	color: #f0623e;
+}
+
+.share-container ul img {
+	width: 960px;
+	height: 488px;
+}
+
+/*почему не все области закрашиваются?*/
+
+.share-container li, .btn-more {
+	background-color: #f7f7f7;
+}
+
+
+
+
+
+/*Extend*/
+
+.extend, .extend p {
+	margin-top: 40px;
+}
+
+.extend-pic {
+	margin-left: -80px;
+}
+
+
+
+
+
+/*Access*/
+
+/*и снова потёк текст*/
+
+.access {
+    height: 300px;
+}
+
+.wrapp {
+	display: inline-block;
+	width: 250px;
+	background: #f7f7f7;
+}
+
+.w-five {
+	margin-left: 100px;
+}
+
+.access p {
+	margin-top: 30px;
+}
+
+.access {
+	margin-top: 100px;
+	background-color: #f7f7f7;
+}
+
+.access-container {
+	background-color: #f7f7f7;
+}
+
+.access a {
+	color: #f16240;
+}
+
+.btn-mobile {
+	display: inline-block;
+	width: 600px;
+}
+
+.android {
+	display: inline-block;
+	margin: 0 5px;
+	margin-top: 20px;
+    width: 128px;
+    height: 46px;
+    border: 1px solid #f3f3f3;
+    border-radius: 3%;
+	background: url(../img/Android.png) no-repeat;
+	/*background-position: -5px 0;*/
+}
+
+.apple {
+	display: inline-block;
+	margin: 0 5px;
+	margin-top: 20px;
+    width: 128px;
+    height: 46px;
+    border: 1px solid #f3f3f3;
+    border-radius: 3%;
+	background: url(../img/Apple.png) no-repeat;
+	/*background-position: -5px 0;*/
+}
+
+
+
+
+
+/*Customer*/
+
+.customer {
+	margin-top: 60px;
+}
+
+
+.customer-container ul img {
+	width: 906px;
+	height: 275px;
+}
+
+
+
+
+
+
+/*подвал*/
+
+.wr-footer {
+	background-color: #f7f7f7;
+}
+
+.footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.footer a {
+	color: #444444;
+}
+
+.about {
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.about li {
+	float: left;
+	margin-right: 20px;
+}
+
+.ascensio {
+	float: right;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.ascensio li {
+	float: left;
+	margin-right: 20px;
+}
