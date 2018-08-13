@@ -18,12 +18,14 @@ body {
 	background-size: cover;
 	background-position-x: center;
 	background-position-y: 0;
+	z-index: -2;
 }
 
 .menu {
 	width: 960px;
 	margin: 0 auto;
 	text-align: center;
+	z-index: -1;
 }
 
 .clearfix:before,
@@ -54,11 +56,12 @@ ul {
 	padding: 0;
 }
 
-.nav-menu li:first-child {
-    float: right;
-    margin-top: 15px;
-    margin-right: 20px;
-    background: url(../img/lang.png) no-repeat left 2px transparent;
+.lang a {
+	float: right;
+	width: 18px;
+	height: 14px;
+	background: url(../img/lang.png) no-repeat transparent;
+	margin-top:22px;
 }
 
 .nav-menu li a:nth-child(1) {
@@ -159,6 +162,7 @@ a, a:hover {
 	border: none;
 	padding-top: 29.6px;
 }
+
 
 .btn-social {
 	display: inline;
@@ -565,4 +569,18 @@ a, a:hover {
 .ascensio li {
 	float: left;
 	margin-right: 20px;
+}
+
+.LogIn{
+	border: solid white 1px;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: unset;
+	width: 100px;
+	float: right;
+	margin-top:15px;
+	margin-right: 10px;
+	padding-top:5px;
+	padding-bottom: 5px;
 }
