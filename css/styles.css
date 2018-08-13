@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/*height: 100%;*/
+	font: normal 12px 'Open Sans', sans-serif;
 }
 
 
@@ -61,7 +62,7 @@ ul {
 	width: 18px;
 	height: 14px;
 	background: url(../img/lang.png) no-repeat transparent;
-	margin-top:22px;
+	margin-top: 22px;
 }
 
 a, a:hover {
@@ -75,12 +76,19 @@ a, a:hover {
 	color: #fff;
 	width: 960px;
 	margin: 0 auto;
-	padding-top: 95px;
+	padding-top: 55px;
+}
+
+.info-site h1 {
+	font-size: 36px;
+    font-weight: 500;
+    line-height: 71px;
 }
 
 .nav-info {
 	float: right;
-	margin-right: 617px; 
+	margin-right: 597px;
+	font-size: 16px; 
 }
 
 .nav-info>li {
@@ -132,25 +140,26 @@ a, a:hover {
 .btn-start {
 	text-align: center;
 	display: inline-block;
-	height: 34px;
+	height: 31px;
 	width: 217px;
 	background-color: #f16240;
 	color: #fff;
 	border: none;
-	padding-top: 15.0px;
+	padding-top: 18.0px;
 }
 
 
 .btn-social {
 	display: inline;
+	width: 960px;
 }
 
 .goo {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 0px;
 	margin-top: 20px;
-    width: 104px;
-    height: 41px;
+    width: 94px;
+    height: 31px;
     border: 1px solid #f3f3f3;
     border-radius: 3%;
 	background: url(../img/Google.png) no-repeat;
@@ -167,7 +176,7 @@ a, a:hover {
 	display: inline-block;
 	margin: 0 5px;
     width: 41px;
-    height: 41px;
+    height: 30px;
     border: 1px solid #f3f3f3;
     border-radius: 3%;
 	background: url(../img/Sprite.png) no-repeat;
@@ -178,7 +187,7 @@ a, a:hover {
 	display: inline-block;
 	margin: 0 5px;
     width: 41px;
-    height: 41px;
+    height: 30px;
     border: 1px solid #f3f3f3;
     border-radius: 3%;
 	background: url(../img/Sprite.png) no-repeat;
