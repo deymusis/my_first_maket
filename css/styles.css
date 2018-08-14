@@ -106,7 +106,7 @@ a, a:hover {
 /*подписка*/
 
 .subs {
-	position: relative;
+	/* position: fixed; */
 	background-color: #fff;
     border: 1px solid #f3f3f3;
     border-radius: 3px;
@@ -124,6 +124,7 @@ a, a:hover {
 	width: 313px;
 	padding: 15px 20px;
 	margin-right: -4.5px;
+	font-size: 14px;
 }
 
 .subs span {
@@ -206,6 +207,7 @@ a, a:hover {
 	padding-top: 10px;
 	padding-left: 5px;
 	color: #000;
+	font-size: 14px;
 }
 
 .chb-agree a {
@@ -249,6 +251,7 @@ a, a:hover {
     height: 100px;
     width: 960px;
 	margin: 0 auto;
+	font-size: 16px;
 }
 
 .underline {
@@ -359,6 +362,7 @@ a, a:hover {
 
 .capabilities p {
 	margin-top: 30px;
+	font-size: 14px;
 }
 
 
@@ -371,6 +375,7 @@ a, a:hover {
 .share {
 	margin-top: 60px;
 	background: #f7f7f7;
+	height: 30px;
 }
 
 .wr-share {
@@ -468,6 +473,11 @@ a, a:hover {
     height: 300px;
 }
 
+.wrapp-w {
+	display: flex;
+	width: 960px;
+}
+
 .wrapp {
 	display: inline-block;
 	width: 250px;
@@ -524,7 +534,10 @@ a, a:hover {
 	/*background-position: -5px 0;*/
 }
 
-
+.access-underline {
+	position: absolute;
+	padding-top: 25px;
+}
 
 
 
@@ -532,6 +545,7 @@ a, a:hover {
 
 .customer {
 	margin-top: 60px;
+	height: 70px;
 }
 
 
