@@ -91,7 +91,7 @@ a, a:hover {
 	width: 30px;
 }
 
-.tr-circle {
+.tr {
 	display: block;
     color: #fff;
     font-size: 18px;
@@ -99,7 +99,7 @@ a, a:hover {
     position: relative;
 }
 
-.tr-circle::before {
+.tr::before {
 	content: '';
     background: #f26341;
     display: inline-block;
@@ -113,7 +113,7 @@ a, a:hover {
     z-index: 0;
 }
 
-.tr-circle::after {
+.tr::after {
 	position: absolute;
     content: '';
     height: 40px;
@@ -124,14 +124,36 @@ a, a:hover {
     z-index: 1;
 }
 
-.tr-circle:nth-child(3)::after {
+.tr:first-child::before {
+	margin-top: 24px;
+}
+
+.tr:first-child::after {
+	margin-top: 24px;
+}
+
+.tr:nth-child(2)::before {
+	margin-top: 70px;
+}
+
+.tr:nth-child(2)::after {
+	margin-top: 70px;
+}
+
+.tr:nth-child(3)::before {
+	margin-top: 118px;
+}
+
+
+.tr:nth-child(3)::after {
 	display: none;
 }
 
 .nav-info {
 	float: right;
 	margin-right: 597px;
-	font-size: 16px; 
+	font-size: 16px;
+	margin-top: 20px; 
 }
 
 .nav-info>li {
@@ -154,7 +176,7 @@ a, a:hover {
     border-radius: 3px;
     padding: 15px 20px;
     padding-bottom: 8px;
-	margin-top: 98px;
+	margin-top: 233px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     z-index: 999;
@@ -302,7 +324,7 @@ a, a:hover {
 /*Create*/
 
 .create {
-	padding-top: 250px;
+	padding-top: 20px;
 }
 
 .create, .share, .extend, .access, .customer {
