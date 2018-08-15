@@ -197,6 +197,7 @@ a, a:hover {
     padding: 15px 20px;
     padding-bottom: 8px;
 	margin-top: 98px;
+	width: 918px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     z-index: 999;
@@ -213,15 +214,21 @@ a, a:hover {
 	font-size: 14px;
 }
 
-.subs span {
+/* .subs span {
 	color: #000;
 	padding-left: 32px;
 	padding-right: 15px;
-}
+} */
 
 .fix {
 	margin-left: 10px;
 	margin-top: -20px;
+}
+
+.fix span {
+	color: #000;
+	padding-left: 32px;
+	padding-right: 15px;
 }
 
 .btn-start {
@@ -232,7 +239,7 @@ a, a:hover {
 	background-color: #f16240;
 	color: #fff;
 	border: none;
-	padding-top: 16.0px;
+	padding-top: 17.0px;
 }
 
 
