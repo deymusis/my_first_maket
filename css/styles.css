@@ -7,6 +7,18 @@ body {
 	font: normal 14px 'Open Sans', sans-serif;
 }
 
+h1 {
+	font-size: 36px;
+	color: #343434;
+}
+
+h1, h2 {
+	font-weight: 100;
+}
+
+h2, p {
+	color: #444444;
+}
 
 /* @media screen and (min-width:100px) and (max-width:1024px) {
 	.wrapper {
@@ -88,8 +100,9 @@ a, a:hover {
 }
 
 .info-site h1 {
-	font-size: 36px;
-    font-weight: 500;
+	/* font-size: 36px;
+	font-weight: 500; */
+	color: #fff;
     line-height: 71px;
 }
 
@@ -159,13 +172,14 @@ a, a:hover {
 
 .nav-info {
 	float: right;
-	margin-right: 597px;
+	margin-right: 582px;
 	font-size: 16px;
-	margin-top: 20px; 
+	margin-top: 17px; 
 }
 
 .nav-info>li {
 	margin-top: 28px;
+	font-size: 17px;
 }
 
 .nav-info>li:first-child {
@@ -180,29 +194,29 @@ a, a:hover {
 
 .subs {
 	background-color: #fff;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #bebebe;
     border-radius: 3px;
     padding: 15px 20px;
     padding-bottom: 8px;
 	margin-top: 233px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 .topWindow{
 	background-color: #fff;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #bebebe;
 	border-radius: 3px;
     padding: 15px 20px;
     padding-bottom: 8px;
-	margin-top: 98px;
+	/* margin-top: 98px; */
 	width: 918px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     z-index: 999;
-	position: fixed !important;
-	top: -98px;
+	position: fixed;
+	top: 0px;
 }
 
 .form {
@@ -213,12 +227,6 @@ a, a:hover {
 	margin-right: -4.5px;
 	font-size: 14px;
 }
-
-/* .subs span {
-	color: #000;
-	padding-left: 32px;
-	padding-right: 15px;
-} */
 
 .fix {
 	margin-left: 10px;
@@ -234,12 +242,12 @@ a, a:hover {
 .btn-start {
 	text-align: center;
 	display: inline-block;
-	height: 33px;
+	height: 32.5px;
 	width: 217px;
 	background-color: #f16240;
 	color: #fff;
 	border: none;
-	padding-top: 17.0px;
+	padding-top: 16.5px;
 }
 
 
@@ -356,9 +364,9 @@ a, a:hover {
 	padding-bottom: -115px;
 }
 
-.create h1, .share h1, .extend h1, .access h1, .customer {
+/* .create h1, .share h1, .extend h1, .access h1, .customer h1 {
 	color: #343434;
-}
+} */
 
 .create h2 {
 	margin-top: 63px;
@@ -439,6 +447,7 @@ a, a:hover {
 	margin: 0 auto;
 	left: 100px;
 	margin-top: 40px;
+	line-height: 25px;
 }
 
 .wrap {
@@ -552,6 +561,10 @@ a, a:hover {
 	margin-top: 40px;
 }
 
+.extend p {
+	line-height: 25px;
+}
+
 .extend-pic {
 	margin-left: -80px;
 }
@@ -585,6 +598,7 @@ a, a:hover {
 
 .access p {
 	margin-top: 30px;
+	line-height: 24px;
 }
 
 .access {
