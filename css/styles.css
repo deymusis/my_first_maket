@@ -197,8 +197,8 @@ a, a:hover {
     border: 1px solid #bebebe;
     border-radius: 3px;
     padding: 15px 20px;
-    padding-bottom: 8px;
-	margin-top: 233px;
+    padding-bottom: 15px;
+	margin-top: 189px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     /* z-index: 999; */
@@ -229,8 +229,8 @@ a, a:hover {
 }
 
 .fix {
-	margin-left: 10px;
-	margin-top: -20px;
+	margin-left: 11px;
+	margin-top: -7px;
 }
 
 .fix span {
