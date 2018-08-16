@@ -347,7 +347,7 @@ a, a:hover {
 /*Create*/
 
 .create {
-	padding-top: 20px;
+	padding-top: 580px;
 }
 
 .create::after {
@@ -389,7 +389,7 @@ a, a:hover {
     width: 107px;
     height: 2px;
     bottom: 245px;
-    left: 0px;
+    left: 2px;
     background: #f58c73;
 	background: linear-gradient(to right,#f58c73,#fff);
 }
@@ -621,7 +621,7 @@ a, a:hover {
 }
 
 .extend-pic {
-	margin-left: -80px;
+	margin-left: -64px;
 }
 
 
