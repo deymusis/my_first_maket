@@ -8,7 +8,6 @@ var page = (function(){
     function initCarousel(){
         $(".externalControl .carousel").jCarouselLite({
             visible: 1,
-            start: 0,
             btnNext: ".externalControl .next",
             btnPrev: ".externalControl .prev",
             btnGo:

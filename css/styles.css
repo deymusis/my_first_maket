@@ -350,6 +350,61 @@ a, a:hover {
 	padding-top: 20px;
 }
 
+.create::after {
+	position: relative;
+	content: '';
+    width: 107px;
+    height: 2px;
+    bottom: 147px;
+    left: 2px;
+    background: #f58c73;
+	background: linear-gradient(to right,#f58c73,#fff);
+}
+
+.share::after {
+	position: relative;
+	content: '';
+    width: 107px;
+    height: 2px;
+    bottom: 4px;
+    left: 2px;
+    background: #f58c73;
+	background: linear-gradient(to right,#f58c73,#fff);
+}
+
+.extend::after {
+	position: relative;
+	content: '';
+    width: 107px;
+    height: 2px;
+    bottom: 275px;
+    left: 2px;
+    background: #f58c73;
+	background: linear-gradient(to right,#f58c73,#fff);
+}
+
+.access::after {
+	position: relative;
+	content: '';
+    width: 107px;
+    height: 2px;
+    bottom: 245px;
+    left: 0px;
+    background: #f58c73;
+	background: linear-gradient(to right,#f58c73,#fff);
+}
+
+.customer::after {
+	position: relative;
+	content: '';
+    width: 107px;
+    height: 2px;
+    bottom: 7px;
+    left: 2px;
+    background: #f58c73;
+	background: linear-gradient(to right,#f58c73,#fff);
+}
+
 .create, .share, .extend, .access, .customer {
 	/* background: #fff; */
     padding-bottom: 153px;
