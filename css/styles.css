@@ -250,6 +250,27 @@ a, a:hover {
 	padding-top: 16.5px;
 }
 
+.checked {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 11px;
+	border: 0 solid #000;
+	border-width: 0 1px 1px 0;
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	margin: -1px 3px;
+	pointer-events: none;
+  }
+
+.btnEditing {
+	background-color: #f7977f;
+  }
+
+.colorOrange {
+	/* background-color: #f16240; */
+	background-color: #000;
+  }
 
 .btn-social {
 	display: inline;
@@ -315,7 +336,7 @@ a, a:hover {
 	color: #f16240;
 }
 
-#agree::before, #subscribe::before {
+/* #agree::before, #subscribe::before {
 	content: "";
     display: block;
     width: 5px;
@@ -326,7 +347,7 @@ a, a:hover {
     transform: rotateZ(45deg);
     margin: -1px 3px;
     pointer-events: none;
-}
+} */
 
 
 #agree, #subscribe {
