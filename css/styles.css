@@ -268,8 +268,14 @@ a, a:hover {
   }
 
 .colorOrange {
-	/* background-color: #f16240; */
-	background-color: #000;
+	text-align: center;
+	display: inline-block;
+	height: 32.5px;
+	width: 217px;
+	background-color: #F1624B;
+	color: #fff;
+	border: none;
+	padding-top: 16.5px;
   }
 
 .btn-social {

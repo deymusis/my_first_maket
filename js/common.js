@@ -40,43 +40,99 @@ var page = (function(){
 $(document).ready(page.init);
 
 
-var checkbox = (function() {
-    var checkboxes = [
-        {id: "subscribe", state:0},
-        {id: "agree", state:0, check:true}
-    ],
-    checkClass = "checked";
+// var checkbox = (function() {
+//     var checkboxes = [
+//         {id: "subscribe", state:0},
+//         {id: "agree", state:0, check:true}
+//     ],
+//     checkClass = "checked";
 
-    var check = function() {
-        var $self = $(this);
-        var id = $self.attr("id");
-        var check = checkboxes.find(function(item){
-            return item.id === id
-        });
-        var $child = $self.children("div");
+//     var check = function() {
+//         var $self = $(this);
+//         var id = $self.attr("id");
+//         var check = checkboxes.find(function(item){
+//             return item.id === id
+//         });
+//         var $child = $self.children("div");
         
-        if(check.state === 1){
-            $child.removeClass(checkClass);
-            check.state = 0;
-            if (check.check){
-                $("#btnEditing").addClass("colorOrange");
-            }
+//         if(check.state === 1){
+//             $child.removeClass(checkClass);
+//             check.state = 0;
+//             if (check.check){
+//                 $("#btnEditing").addClass("colorOrange");
+//             }
+//         } else {
+//             $child.addClass(checkClass);
+//             check.state = 1;
+//             if (check.check){
+//                 $("#btnEditing").removeClass("colorOrange");
+//             }
+//         }
+//     }
+
+//     var checkboxs = function(){
+//         checkboxes.forEach(function(element) {
+//             $("#" + element.id).click(check);
+//         });
+//     }
+//     return{
+//         cb: checkboxs
+//     };
+// })();
+// checkbox.cb();
+
+
+
+
+$(document).ready(function() {
+
+    $('#subscribe').click(toggleChecked);
+
+    $('#agree').click(function() {
+        toggleChecked.call(this);
+        disableButton();
+    });
+
+    function toggleChecked() {
+        var $check = $(this).children('div');
+
+        if ($check.hasClass("checked")) {
+            $check.removeClass("checked")
         } else {
-            $child.addClass(checkClass);
-            check.state = 1;
-            if (check.check){
-                $("#btnEditing").removeClass("colorOrange");
-            }
+            $check.addClass("checked")
         }
     }
 
-    var checkboxs = function(){
-        checkboxes.forEach(function(element) {
-            $("#" + element.id).click(check);
-        });
+    function disableButton() {
+        var $chk = $('btn-start');
+
+        if ($chk.hasClass("colorOrange")) {
+            $chk.removeClass("colorOrange")
+        } else {
+            $chk.addClass("colorOrange")
+        }
     }
-    return{
-        cb: checkboxs
-    };
-})();
-checkbox.cb();
+
+});
+
+
+
+// $(document).ready(function() {
+//     $('#agree').click(function(){
+//         var $chk = $(this).children('div')
+//     });
+// }
+
+
+
+
+// $(document).ready(function() {
+
+//     $('#agree').click(function() {
+//         var $check = $('#agree div');
+//         $check.addClass('checked');
+
+    
+
+// });
+// });
