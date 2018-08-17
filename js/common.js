@@ -104,7 +104,7 @@ $(document).ready(function() {
     }
 
     function disableButton() {
-        var $chk = $('btn-start');
+        var $chk = $('.btn-start');
 
         if ($chk.hasClass("colorOrange")) {
             $chk.removeClass("colorOrange")
@@ -114,14 +114,6 @@ $(document).ready(function() {
     }
 
 });
-
-
-
-// $(document).ready(function() {
-//     $('#agree').click(function(){
-//         var $chk = $(this).children('div')
-//     });
-// }
 
 
 
