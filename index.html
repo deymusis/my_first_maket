@@ -13,14 +13,14 @@
 
 			<div class="menu clearfix">
 				<div class="logo">
-					<a href="#"><img src="img/LOGO new.png" alt=""></a>
+					<a href="#"><img src="img/LOGO new.png" alt="logo"></a>
 				</div>
 				<div class="lang"><a href="#"></a></div>
-				<div class="LogIn" ><a href="#">Log in</a></div>
+				<div class="login" ><a href="#">Log in</a></div>
 			</div>
 
 			<div class="info-site">
-						<h1>Your  personal online office</h1>
+						<h1>YourRRRRRRRRR personal online office</h1>
 						<!-- <img src="img/split_1.png" alt="split"> -->
 
 						<div class="triple">
@@ -34,14 +34,19 @@
 							<li>Right in your browser</li>
 							<li>Free of charge</li>
 						</ul>
-						
+					
 					<div id="topPanel" class="subs">
 						<div class="fix">
 								<input class="form" type="text" placeholder="Enter your email address">
 
 								<!-- та же ерунда с текстом -->
 
-								<div class="btn-start"><a href="#">Start editing</a></div><span> or sign in</span>
+							<!-- <div id="btnEditing"> -->
+								<div class="btn-start">
+									<a href="#">Start editing</a>
+								</div>
+							<!-- </div> -->
+							<span> or sign in</span>
 							<div class="btn-social">
 								<a class="goo" href="#"></a>
 								<a class="fb" href="#"></a>
@@ -50,13 +55,24 @@
 						</div>
 
 						<div class="chb-agree">
-							<div><input type="checkbox" id="subscribe"><label for="subscribe">I want to subscribe to the ONLYOFFICE newsletter</label></div>
-							<div><input type="checkbox" id="agree"><label for="agree">I agree to ONLYOFFICE <a href="#">Terms and conditions</a> and <a href="#">Privacy statement</a></label></div>
+							<div>
+								<span id="subscribe">
+									<div ></div>
+								</span>
+								<label for="subscribe"><p>I want to subscribe to the ONLYOFFICE newsletter</p></label>
+							</div>
+							<div>
+								<span id="agree">
+									<div ></div>
+								</span>
+								<label for="agree"><p>I agree to ONLYOFFICE <a href="#">Terms and conditions</a> and <a href="#">Privacy statement</a></p></label>
+							</div>
 						</div>
 
 					</div>
 				
 			</div>
+		</div>
 
 			<div class="create clearfix">
 				<h1>Create</h1>
@@ -69,12 +85,16 @@
 
 			<div class="custom-container externalControl clearfix" id="externalControl">
 			    <div class="carousel">
+					<!-- <div class="crl-prev"></div>
+					<div class="crl-next"></div> -->
 
 					<!-- запутался со стрелками -->
 
 				    	<!-- <a href="#" class="prev">‹</a>
 				    	<a href="#" class="next">›</a> -->
-			    
+					
+					<button class="slick-prev"></button>
+
 			        <ul>
 				    	<li><img src="img/скрин Create.png" alt="screen"></li>
 			            <li><img src="img/скрин Create 2.png" alt="screen"></li>
@@ -82,12 +102,15 @@
 					</ul>
 
 					<div class="btn-slide">
-				        <a href="#" class="prev">‹</a>
+				        <!-- <a href="#" class="prev">‹</a> -->
 				        <a href="#" class="go one">&#8226</a>
 				        <a href="#" class="go two">&#8226</a>
 				        <a href="#" class="go three">&#8226</a>
-				        <a href="#" class="next">›</a>
-			    	</div>
+				        <!-- <a href="#" class="next">›</a> -->
+					</div>
+					
+					<button class="slick-next"></button>
+
 			    </div>
 			</div>
 
@@ -116,11 +139,12 @@
 
 				<div class="share-container externalControl clearfix" id="externalControl">
 				    <div class="carousel">
-
 						<!-- запутался со стрелками -->
 
 					    	<!-- <a href="#" class="prev">‹</a>
-					    	<a href="#" class="next">›</a> -->
+							<a href="#" class="next">›</a> -->
+							
+						<button class="slick-prev"></button>
 				    
 				        <ul>
 					    	<li><img src="img/скриншот 1.png" alt="screen"></li>
@@ -132,15 +156,18 @@
 						</ul>
 
 						<div class="btn-slide btn-more">
-					        <a href="#" class="prev">‹</a>
+					        <!-- <a href="#" class="prev">‹</a> -->
 					        <a href="#" class="go one">&#8226</a>
 					        <a href="#" class="go two">&#8226</a>
 					        <a href="#" class="go three">&#8226</a>
 					        <a href="#" class="go four">&#8226</a>
 					        <a href="#" class="go five">&#8226</a>
 					        <a href="#" class="go six">&#8226</a>
-					        <a href="#" class="next">›</a>
-				    	</div>
+					        <!-- <a href="#" class="next">›</a> -->
+						</div>
+
+						<button class="slick-next"></button>
+
 				    </div>
 				</div>
 			</div>
@@ -179,14 +206,14 @@
 								<a class="apple" href="#"></a>
 							</div>
 						</div>
-						<div class="wrapp w-four">
+						<!-- <div class="wrapp w-four">
 							<h2>From Google Chrome</h2>
 							<p>Get a quick access to your documents. Just install <a href="#">ONLYOFFICE extension</a> for Google Chrome.</p>
 						</div>
 						<div class="wrapp w-five">
 							<h2>From Google Drive</h2>
 							<p>Open and edit your docs stored on Google Drive with <a href="#">ONLYOFFICE app</a></p>
-						</div>
+						</div> -->
 					</div>
 				</div>	
 			</div>
@@ -205,7 +232,9 @@
 						<!-- запутался со стрелками -->
 
 					    	<!-- <a href="#" class="prev">‹</a>
-					    	<a href="#" class="next">›</a> -->
+							<a href="#" class="next">›</a> -->
+							
+						<button class="slick-prev"></button>
 				    
 				        <ul>
 					    	<li><img src="img/Customer.png" alt="screen"></li>
@@ -217,15 +246,18 @@
 						</ul>
 
 						<div class="btn-slide">
-					        <a href="#" class="prev">‹</a>
+					        <!-- <a href="#" class="prev">‹</a> -->
 					        <a href="#" class="go one">&#8226</a>
 					        <a href="#" class="go two">&#8226</a>
 					        <a href="#" class="go three">&#8226</a>
 					        <a href="#" class="go four">&#8226</a>
 					        <a href="#" class="go five">&#8226</a>
 					        <a href="#" class="go six">&#8226</a>
-					        <a href="#" class="next">›</a>
-				    	</div>
+					        <!-- <a href="#" class="next">›</a> -->
+						</div>
+						
+						<button class="slick-next"></button>
+
 				    </div>
 				</div>
 			</div>
@@ -238,11 +270,11 @@
 					</ul>
 					<ul class="ascensio">
 						<li><a href="#">&#169 Ascensio System SIA 2017, All rights reserved</a></li>
-						<li><a href="#"><img src="img/instagram icon.png" alt=""></a></li>
+						<li><a href="#"><img src="img/instagram icon.png" alt="instagram"></a></li>
 					</ul>
 				</div>
 			</div>
-	</div>	
+		
 
 
 	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>

@@ -1,4 +1,3 @@
-
 var page = (function(){
     function init() {
         initCarousel();
@@ -8,9 +7,8 @@ var page = (function(){
     function initCarousel(){
         $(".externalControl .carousel").jCarouselLite({
             visible: 1,
-            start: 0,
-            btnNext: ".externalControl .next",
-            btnPrev: ".externalControl .prev",
+            btnNext: ".externalControl .slick-next",
+            btnPrev: ".externalControl .slick-prev",
             btnGo:
             [".externalControl .one", ".externalControl .two",
             ".externalControl .three",".externalControl .four",
@@ -32,6 +30,33 @@ var page = (function(){
             }; 
             console.log("windowScroll " + windowScroll + ", topOfToppanel" + topOfToppanel); 
         });
+
+        $('#subscribe').click(toggleChecked);
+
+        $('#agree').click(function() {
+            toggleChecked.call(this);
+            disableButton();
+        });
+    
+        function toggleChecked() {
+            var $check = $(this).children('div');
+    
+            if ($check.hasClass("checked")) {
+                $check.removeClass("checked")
+            } else {
+                $check.addClass("checked")
+            }
+        }
+    
+        function disableButton() {
+            var $chk = $('.btn-start');
+    
+            if ($chk.hasClass("colorOrange")) {
+                $chk.removeClass("colorOrange")
+            } else {
+                $chk.addClass("colorOrange")
+            }
+        }
     };
     return {
         init: init
@@ -39,3 +64,4 @@ var page = (function(){
 }());
 
 $(document).ready(page.init);
+
