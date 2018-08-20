@@ -4,7 +4,9 @@ var page = (function(){
         headTop();
     }
     
-    function initCarousel(){
+        /*Карусель*/
+
+    function initCarousel() {
         $(".externalControl .carousel").jCarouselLite({
             visible: 1,
             btnNext: ".externalControl .slick-next",
@@ -16,7 +18,9 @@ var page = (function(){
         });
     }
     
-    function headTop (){ 
+        /*Прилипалка формы входа*/
+
+    function headTop () { 
         var $topPanel = $("#topPanel"); //Получаем нужный объект var
         var topOfToppanel = $topPanel.offset().top; //Получаем начальное расположение нашего блока 
         $(window).scroll(function () {
@@ -31,13 +35,18 @@ var page = (function(){
             console.log("windowScroll " + windowScroll + ", topOfToppanel" + topOfToppanel); 
         });
 
+            /*Галочка для подписки*/
+
         $('#subscribe').click(toggleChecked);
+
+            /*Галочка для согласия*/
 
         $('#agree').click(function() {
             toggleChecked.call(this);
             disableButton();
         });
     
+
         function toggleChecked() {
             var $check = $(this).children('div');
     
@@ -47,7 +56,9 @@ var page = (function(){
                 $check.addClass("checked")
             }
         }
-    
+        
+            /*Активность кнопки*/
+
         function disableButton() {
             var $chk = $('.btn-start');
     
