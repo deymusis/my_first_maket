@@ -427,7 +427,7 @@ label p {
 }
 
 .create, .share, .extend, .access, .customer {
-    padding-bottom: 153px;
+    padding-bottom: 100px;
     height: 100px;
     width: 960px;
 	margin: 0 auto;
@@ -455,12 +455,34 @@ label p {
 
 /*первая карусель*/
 
-.carousel {
+.carousel-one {
 	background: #fff;
 	margin: 0 auto;
 }
 
-.carousel img {
+.carousel-one img {
+	width: 940px;
+    height: 465px;
+    padding-left: 22px;
+}
+
+.carousel-two {
+	background: #fff;
+	margin: 0 auto;
+}
+
+.carousel-two img {
+	width: 940px;
+    height: 465px;
+    padding-left: 22px;
+}
+
+.carousel-three {
+	background: #fff;
+	margin: 0 auto;
+}
+
+.carousel-three img {
 	width: 940px;
     height: 465px;
     padding-left: 22px;
@@ -560,6 +582,10 @@ label p {
     border-top: none;
 }
 
+
+
+
+
 /*возможности*/
 
 
@@ -617,7 +643,7 @@ label p {
 
 /*вторая карусель*/
 
-.carousel {
+.carousel1 {
 	background: #fff;
 	margin: 0 auto;
 }

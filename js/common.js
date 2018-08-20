@@ -1,26 +1,51 @@
 var page = (function(){
     function init() {
-        initCarousel();
+        initCarouselOne();
+        initCarouselTwo();
+        initCarouselThree();
         headTop();
     }
     
         /*Карусель*/
 
-    function initCarousel() {
-        $(".externalControl .carousel").jCarouselLite({
+    function initCarouselOne() {
+        $(".externalControl-one .carousel-one").jCarouselLite({
             visible: 1,
-            btnNext: ".externalControl .slick-next",
-            btnPrev: ".externalControl .slick-prev",
+            btnNext: ".externalControl-one .slick-next",
+            btnPrev: ".externalControl-one .slick-prev",
             btnGo:
-            [".externalControl .one", ".externalControl .two",
-            ".externalControl .three",".externalControl .four",
-            ".externalControl .five",".externalControl .six"]
+            [".externalControl-one .one", ".externalControl-one .two",
+            ".externalControl-one .three"]
+        });
+    }
+
+    function initCarouselTwo() {
+        $(".externalControl-two .carousel-two").jCarouselLite({
+            visible: 1,
+            btnNext: ".externalControl-two .slick-next",
+            btnPrev: ".externalControl-two .slick-prev",
+            btnGo:
+            [".externalControl-two .one", ".externalControl-two .two",
+            ".externalControl-two .three",".externalControl-two .four",
+            ".externalControl-two .five",".externalControl-two .six"]
+        });
+    }
+
+    function initCarouselThree() {
+        $(".externalControl-three .carousel-three").jCarouselLite({
+            visible: 1,
+            btnNext: ".externalControl-three .slick-next",
+            btnPrev: ".externalControl-three .slick-prev",
+            btnGo:
+            [".externalControl-three .one", ".externalControl-three .two",
+            ".externalControl-three .three",".externalControl-three .four",
+            ".externalControl-three .five",".externalControl-three .six"]
         });
     }
     
         /*Прилипалка формы входа*/
 
-    function headTop () { 
+    function headTop() { 
         var $topPanel = $("#topPanel"); //Получаем нужный объект var
         var topOfToppanel = $topPanel.offset().top; //Получаем начальное расположение нашего блока 
         $(window).scroll(function () {
