@@ -455,12 +455,12 @@ label p {
 
 /*первая карусель*/
 
-.carousel-one {
+.carousel {
 	background: #fff;
 	margin: 0 auto;
 }
 
-.carousel-one img {
+.carousel img {
 	width: 940px;
     height: 465px;
     padding-left: 22px;

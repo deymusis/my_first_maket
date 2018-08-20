@@ -1,50 +1,32 @@
 var page = (function(){
+    var color = "colorOrange",
+    checked = "checked";
+
     function init() {
-        initCarouselOne();
-        initCarouselTwo();
-        initCarouselThree();
+        var carousels = $(".externalControl");
+        var carouselLength = carousels.length;
+        for(var i = 0; i< carouselLength; i++){
+            initCarousel($(carousels[i]));
+        }
         headTop();
     }
     
         /*Карусель*/
+    
+    function initCarousel($control) {
+        var $buttonsNext = $control.find(".slick-next"),
+            $buttonsPrev = $control.find(".slick-prev"),
+            $go = $control.find('a.go')
 
-    function initCarouselOne() {
-        $(".externalControl-one .carousel-one").jCarouselLite({
+        $control.find(".carousel").jCarouselLite({
             visible: 1,
-            btnNext: ".externalControl-one .slick-next",
-            btnPrev: ".externalControl-one .slick-prev",
-            btnGo:
-            [".externalControl-one .one", ".externalControl-one .two",
-            ".externalControl-one .three"]
-        });
-    }
-
-    function initCarouselTwo() {
-        $(".externalControl-two .carousel-two").jCarouselLite({
-            visible: 1,
-            btnNext: ".externalControl-two .slick-next",
-            btnPrev: ".externalControl-two .slick-prev",
-            btnGo:
-            [".externalControl-two .one", ".externalControl-two .two",
-            ".externalControl-two .three",".externalControl-two .four",
-            ".externalControl-two .five",".externalControl-two .six"]
-        });
-    }
-
-    function initCarouselThree() {
-        $(".externalControl-three .carousel-three").jCarouselLite({
-            visible: 1,
-            btnNext: ".externalControl-three .slick-next",
-            btnPrev: ".externalControl-three .slick-prev",
-            btnGo:
-            [".externalControl-three .one", ".externalControl-three .two",
-            ".externalControl-three .three",".externalControl-three .four",
-            ".externalControl-three .five",".externalControl-three .six"]
+            btnNext: $buttonsNext,
+            btnPrev: $buttonsPrev,
+            btnGo: $go
         });
     }
     
         /*Прилипалка формы входа*/
-
     function headTop() { 
         var $topPanel = $("#topPanel"); //Получаем нужный объект var
         var topOfToppanel = $topPanel.offset().top; //Получаем начальное расположение нашего блока 
@@ -75,10 +57,10 @@ var page = (function(){
         function toggleChecked() {
             var $check = $(this).children('div');
     
-            if ($check.hasClass("checked")) {
-                $check.removeClass("checked")
+            if ($check.hasClass(checked)) {
+                $check.removeClass(checked)
             } else {
-                $check.addClass("checked")
+                $check.addClass(checked)
             }
         }
         
@@ -87,10 +69,10 @@ var page = (function(){
         function disableButton() {
             var $chk = $('.btn-start');
     
-            if ($chk.hasClass("colorOrange")) {
-                $chk.removeClass("colorOrange")
+            if ($chk.hasClass(color)) {
+                $chk.removeClass(color)
             } else {
-                $chk.addClass("colorOrange")
+                $chk.addClass(color)
             }
         }
     };
