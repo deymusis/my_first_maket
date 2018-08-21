@@ -5,9 +5,18 @@ var page = (function(){
     function init() {
         var carousels = $(".externalControl");
         var carouselLength = carousels.length;
-        for(var i = 0; i< carouselLength; i++){
+        for(var i = 0; i < carouselLength; i++){
             initCarousel($(carousels[i]));
         }
+
+        // var activeGo = $(".btn-slide");
+        // var goLength = activeGo.length;
+        // for(var i = 0; i < goLength; i++){
+        //     carouselActive($(activeGo[i]));
+        // }
+
+        active();
+
         headTop();
     }
     
@@ -20,12 +29,33 @@ var page = (function(){
 
         $control.find(".carousel").jCarouselLite({
             visible: 1,
+            speed: 500,
             btnNext: $buttonsNext,
             btnPrev: $buttonsPrev,
             btnGo: $go
         });
     }
+
+    // function carouselActive($active) {
+    //     var $act = $active(this).children("a");
     
+    //         if ($act.hasClass(".go-focus")) {
+    //             $act.removeClass(".go-focus")
+    //         } else {
+    //             $act.addClass(".go-focus")
+    //         }
+    // }
+    
+    function active() {
+        var $chk = $('.slick-next');
+
+        if ($chk.click()) {
+            $chk.find('.btn-slide a').removeClass('.go-focus')
+        } else {
+            $chk.addClass('.go-focus')
+        }
+    }
+
         /*Прилипалка формы входа*/
     function headTop() { 
         var $topPanel = $("#topPanel"); //Получаем нужный объект var
