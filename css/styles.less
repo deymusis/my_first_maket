@@ -1,0 +1,816 @@
+/*Переменные*/
+
+@black: #000;
+@white: #fff;
+@red: #f00;
+@bright-red: #f26341;
+@moderate-orange: #b36840;
+@grey: #bebebe;
+@very-light-grey: #f7f7f7;
+
+.z-index-max (@z-index: 99999) {
+	z-index: @z-index;
+}
+
+/*Примеси*/
+
+.rounded-corners (@radius: 3px) {
+   border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.for-line {
+	background: linear-gradient(to right,#f58c73,#fff);
+	content: '';
+	position: relative;
+  height: 2px;
+  left: 2px;
+  width: 107px;
+}
+
+.for-carousel {
+	width: 940px;
+  height: 465px;
+  padding-left: 22px;
+}
+
+.for-slick {
+	position: absolute;
+  background: transparent;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  outline: none;
+  padding: 0;
+  top: 245px;
+  width: 50px;
+  .z-index-max;
+}
+
+.for-slick-after {
+	content: '';
+  position: absolute;
+  border: 2px solid #bdbdbd;
+  border-right: none;
+  border-top: none;
+  height: 21px;
+  top: 15px;
+  width: 21px;
+}
+
+.for-slick-hover {
+	border: 2px solid #f16847;
+  border-right: none;
+  border-top: none;
+}
+
+.for-goo_fb_in {
+	display: inline-block;
+	border-radius: 3%;
+	border: 1px solid @very-light-grey;
+	height: 31px;
+}
+
+/*Основной код*/
+
+body {
+	font: normal 14px 'Open Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  min-width: 960px;
+  width: 100%;
+}
+
+h1 {
+	color: lighten(@black, 20%);
+	font-size: 36px;
+}
+
+h1, h2 {
+	font-weight: 100;
+}
+
+h2, p {
+	color: lighten(@black, 20%);
+}
+
+a, a:hover {
+	color: @white;
+	text-decoration: none;
+}
+
+/* @media screen and (min-width:100px) and (max-width:1024px) {
+	.wrapper {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	}
+} */
+
+/*шапка сайта*/
+
+.wrapper {
+	background-size: cover;
+	background: url(../img/shutterstoke.jpg) no-repeat;
+	background-position-x: center;
+	background-position-y: 0;
+	height: 500px;
+	min-width: 1545px;
+	position: absolute;
+	width: 100%;
+}
+
+.menu {
+	margin: 0 auto;
+	text-align: center;
+	width: 960px;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	padding-top: 15px;
+}
+
+.nav-menu {
+	float: right;
+	padding-top: 15px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.lang a {
+	background: url(../img/lang.png) no-repeat transparent;
+	float: right;
+	height: 14px;
+	margin-top: 22px;
+	width: 18px;
+}
+
+.login {
+	border: solid @white 1px;
+	float: right;
+	margin-right: 10px;
+	margin-top:15px;
+	padding-bottom: 5px;
+	padding-top:5px;
+	width: 100px;
+  background-color: unset;
+  border-radius: 3px;
+  color: @white;
+  font-size: 16px;
+}
+
+.info-site {
+	color: @white;
+	display: block;
+	margin: 0 auto;
+	padding-top: 55px;
+	position: relative;
+	width: 960px;
+}
+
+.info-site h1 {
+	color: @white;
+  line-height: 71px;
+}
+
+.triple {
+	height: 10px;
+	width: 30px;
+}
+
+.tr {
+	display: block;
+  color: @white;
+  font-size: 18px;
+  margin: 0 0 -35px 32px;
+  position: relative;
+}
+
+.tr::before {
+	content: '';
+  background-color: @bright-red;
+  border-radius: 50%;
+  border: 2px solid @moderate-orange;
+  display: inline-block;
+  height: 9px;
+  left: -30px;
+  position: absolute;
+  top: 8px;
+  width: 9px;
+  z-index: 0;
+}
+
+.tr::after {
+	content: '';
+	position: absolute;
+  background-color: @bright-red;
+  height: 40px;
+  left: -24px;
+  top: 18px;
+  width: 1px;
+  z-index: 1;
+}
+
+.tr:first-child::before {
+	margin-top: 24px;
+}
+
+.tr:first-child::after {
+	margin-top: 24px;
+}
+
+.tr:nth-child(2)::before {
+	margin-top: 70px;
+}
+
+.tr:nth-child(2)::after {
+	margin-top: 70px;
+}
+
+.tr:nth-child(3)::before {
+	margin-top: 118px;
+}
+
+
+.tr:nth-child(3)::after {
+	display: none;
+}
+
+.nav-info {
+	float: right;
+	font-size: 16px;
+	margin-right: 582px;
+	margin-top: 17px; 
+}
+
+.nav-info>li {
+	font-size: 17px;
+	margin-top: 28px;
+}
+
+.nav-info>li:first-child {
+	margin-top: 0;
+}
+
+
+
+/*подписка*/
+
+.subs {
+	.rounded-corners;
+	background-color: @white;
+	margin-top: 189px;
+  border-radius: 3px;
+  border: 1px solid @grey;
+  padding-bottom: 5px;
+  padding: 15px 20px;
+}
+
+.topWindow{
+	.rounded-corners;
+	background-color: @white;
+	border-radius: 3px;
+	position: fixed;
+	top: 0px;
+	width: 918px;
+  border: 1px solid @grey;
+  padding-bottom: 8px;
+  padding: 15px 20px;
+  .z-index-max;
+}
+
+.form {
+	font-size: 14px;
+	height: 15px;
+	margin-right: -3.5px;
+	padding: 15px 20px;
+	position: relative;
+	width: 313px;
+}
+
+.fix {
+	margin-left: 11px;
+	margin-top: 10px;
+}
+
+.fix span {
+	color: @white;
+	padding-left: 32px;
+	padding-right: 15px;
+}
+
+.btn-start {
+	background-color: @bright-red;
+	border: none;
+	color: @white;
+	display: inline-block;
+	height: 32.5px;
+	opacity: 0.5;
+	padding-top: 16.5px;
+	text-align: center;
+	width: 217px;
+  cursor: default;
+}
+
+.btn-start a {
+	cursor: default;
+}
+
+.checked {
+	content: "";
+	display: block;
+	border: 0 solid @black;
+	-webkit-transform: rotateZ(45deg);
+	border-width: 0 1px 1px 0;
+	height: 11px;
+	margin: -1px 3px;
+	pointer-events: none;
+	transform: rotateZ(45deg);
+	width: 5px;
+}
+
+.btnEditing {
+	background-color: lighten(@bright-red, 5%);
+}
+
+.colorOrange {
+	background-color: @bright-red;
+	border: none;
+	color: @white;
+	display: inline-block;
+	height: 32.5px;
+	opacity: 1;
+	padding-top: 16.5px;
+	text-align: center;
+	width: 217px;
+  cursor: pointer;
+}
+
+.btn-social {
+	display: block;
+  flex: right;
+  margin-top: -40px;
+  padding-left: 700px;
+  padding: 700;
+  width: 963px;
+}
+
+.goo {
+	.for-goo_fb_in;
+	background-position: 5px 0;
+	background: url(../img/icon_google.png) no-repeat;
+	margin: 0 0px;
+	width: 94px;
+}
+
+
+
+/*корявенький спрайтик*/
+
+.fb {                                              
+	.for-goo_fb_in;
+  background-position: 0px 0;
+  background: url(../img/icon_facebook.png) no-repeat;
+  margin: 0 5px;
+  width: 41px;
+}
+
+.in {
+	.for-goo_fb_in;
+  background-position: 0px 0px;
+  background: url(../img/icon_lindkn.png) no-repeat;
+  margin: 0 5px;
+  width: 33px;
+}
+
+
+
+/*галочки*/
+
+.chb-agree {                                           
+	color: @black;
+	display: block;
+	font-size: 14px;
+	padding-left: 5px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.chb-agree a {
+	color: lighten(@bright-red, 5%);
+}
+
+
+#agree, #subscribe {
+	-webkit-appearance: none;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  margin: 5px;
+  outline: none;
+  width: 14px;
+}
+
+label p {
+	margin-top: -23px;
+  padding-left: 28px;
+}
+
+
+/*Create*/
+
+.create {
+	padding-top: 580px;
+}
+
+.create::after {
+	.for-line;
+	bottom: 147px;
+}
+
+.share::after {
+	.for-line;
+  bottom: 4px;
+}
+
+.extend::after {
+	.for-line;
+  bottom: 275px;
+}
+
+.access::after {
+	.for-line;
+  bottom: 245px;
+}
+
+.customer::after {
+	.for-line;
+  bottom: 7px;
+}
+
+.create, .share, .extend, .access, .customer {
+	font-size: 16px;
+	margin: 0 auto;
+  height: 100px;
+  padding-bottom: 100px;
+  width: 960px;
+}
+
+.underline {
+	padding-bottom: -115px;
+	position: relative;
+}
+
+.create h2 {
+	color: lighten(@black, 26.7%);
+	margin-top: 63px;
+}
+
+.create p {
+	color: lighten(@black, 26.7%);
+	margin-top: 25px;
+}
+
+
+
+/*первая карусель*/
+
+.carousel {
+	background: @white;
+	margin: 0 auto;
+}
+
+.carousel img {
+	.for-carousel;
+}
+
+.carousel-two {
+	background: @white;
+	margin: 0 auto;
+}
+
+.carousel-two img {
+	.for-carousel;
+}
+
+.carousel-three {
+	background: @white;
+	margin: 0 auto;
+}
+
+.carousel-three img {
+	.for-carousel;
+}
+
+.btn-slide {
+	margin-left: 420px;
+}
+
+.prev, .next, .go {
+	color: #f0623e;
+	margin: 0 5px 0 0;
+  padding: 7px 5px 0 5px;
+}
+
+.go {
+	color: #f8b19f;
+	font-size: 32px;
+}
+
+.go:hover {
+	color: #f0623e;
+}
+
+.go:focus {
+	color: #f0623e;
+	font-size: 48px;
+}
+
+.slick-prev {
+	.for-slick;
+  right: 948px;
+  
+}
+
+.slick-next {
+	.for-slick;
+  right: 10px;
+}
+
+.slick-prev::after {
+	.for-slick-after;
+	left: 74px;
+	transform: rotate(45deg);
+  
+}
+
+.slick-next::after {
+	.for-slick-after;
+	left: 32px;
+	transform: rotate(-135deg);
+}
+
+.slick-prev:hover:after {
+	.for-slick-hover;
+}
+
+.slick-next:hover:after {
+	.for-slick-hover;
+}
+
+
+
+/*возможности*/
+
+.capabilities {
+	background: @white;
+	left: 100px;
+	line-height: 25px;
+	margin-top: 40px;
+	margin: 0 auto;
+  height: 100px;
+  padding-bottom: 153px;
+  width: 960px;
+}
+
+.wrap {
+	display: inline-block;
+	width: 250px;
+}
+
+.w-two, .w-three {
+	margin-left: 100px;
+}
+
+.capabilities img {
+	height: 35%;
+	margin-left: 50px;
+	width: 35%;
+}
+
+.capabilities p {
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+
+
+/*Share*/
+
+.share {
+	background: @very-light-grey;
+	height: 30px;
+	margin-top: 60px;
+}
+
+.wr-share {
+	background: @very-light-grey;
+}
+
+
+
+/*вторая карусель*/
+
+.carousel1 {
+	background: @white;
+	margin: 0 auto;
+}
+
+.btn-slide {
+	margin-left: 420px;
+}
+
+.prev, .next, .go {
+	color: #f0623e;
+	margin: 0 5px 0 0;
+  padding: 7px 5px 0 5px;
+}
+
+.go {
+	color: #f8b19f;
+	font-size: 32px;
+}
+
+.go:hover {
+	color: #f0623e;
+}
+
+.go:focus {
+	color: #f0623e;
+	font-size: 32px;
+}
+
+.share-container ul img {
+	width: 920px;
+  height: 480px;
+  padding-left: 16px;
+}
+
+.share-container li, .btn-more {
+	background-color: @very-light-grey;
+}
+
+
+
+/*Extend*/
+
+.extend, .extend p {
+	margin-top: 40px;
+}
+
+.extend p {
+	line-height: 25px;
+}
+
+.extend-pic {
+	margin-left: -64px;
+}
+
+
+
+/*Access*/
+
+.access {
+  height: 300px;
+}
+
+.wrapp-w {
+	display: flex;
+	width: 960px;
+}
+
+.wrapp {
+	background: @very-light-grey;
+	display: inline-block;
+	width: 250px;
+}
+
+.w-five {
+	margin-left: 100px;
+}
+
+.access p {
+	line-height: 24px;
+	margin-top: 30px;
+}
+
+.access {
+	background-color: @very-light-grey;
+	margin-top: 100px;
+}
+
+.access-container {
+	background-color: @very-light-grey;
+}
+
+.access a {
+	color: lighten(@bright-red, 5%);
+}
+
+.btn-mobile {
+	display: inline-block;
+	width: 600px;
+}
+
+.android {
+	background: url(../img/Android.png) no-repeat;
+	display: inline-block;
+	margin-top: 20px;
+	margin: 0 5px;
+  border-radius: 3%;
+  height: 46px;
+  width: 128px;
+}
+
+.apple {
+	background: url(../img/Apple.png) no-repeat;
+	display: inline-block;
+	margin-top: 20px;
+	margin: 0 5px;
+  border-radius: 3%;
+  height: 46px;
+  width: 128px;
+	/*background-position: -5px 0;*/
+}
+
+.access-underline {
+	padding-top: 25px;
+	position: absolute;
+}
+
+
+
+/*Customer*/
+
+.customer {
+	height: 0px;
+	margin-top: -55px;
+}
+
+
+.customer-container ul img {
+	height: 275px;
+	width: 906px;
+}
+
+
+
+/*подвал*/
+
+.wr-footer {
+	background-color: @very-light-grey;
+}
+
+.footer {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.footer a {
+	color: lighten(@black, 26.7%);
+}
+
+.about {
+	float: left;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.about li {
+	float: left;
+	margin-right: 20px;
+}
+
+.ascensio {
+	float: right;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.ascensio li {
+	float: left;
+	margin-right: 20px;
+}
