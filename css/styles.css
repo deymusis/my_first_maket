@@ -405,7 +405,7 @@ label p {
   height: 2px;
   left: 2px;
   width: 107px;
-  bottom: 245px;
+  bottom: 228px;
 }
 .customer::after {
   background: linear-gradient(to right, #f58c73, #fff);
@@ -476,10 +476,6 @@ label p {
   margin: 0 5px 0 0;
   padding: 7px 5px 0 5px;
 }
-.go-focus {
-  color: #f0623e;
-  font-size: 32px;
-}
 .go {
   color: #f8b19f;
   margin: 0 5px 0 0;
@@ -489,10 +485,14 @@ label p {
 .go:hover {
   color: #f0623e;
 }
-.go:focus {
+.go-focus {
   color: #f0623e;
   font-size: 32px;
 }
+/* .go:focus {
+  color: #f0623e;
+  font-size: 32px;
+} */
 .slick-prev {
   position: absolute;
   background: transparent;
@@ -637,7 +637,7 @@ label p {
 }
 .access {
   background-color: #f7f7f7;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .access-container {
   background-color: #f7f7f7;
@@ -681,6 +681,13 @@ label p {
   height: 275px;
   width: 906px;
 }
+.customer-container .slick-prev::after {
+  top: -78px;
+}
+.customer-container .slick-next::after {
+  top: -78px;
+}
+
 /*подвал*/
 .wr-footer {
   background-color: #f7f7f7;

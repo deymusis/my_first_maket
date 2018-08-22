@@ -1,6 +1,7 @@
 var page = (function(){
     var color = "colorOrange",
-    checked = "checked";
+    checked = "checked",
+    goFocus = "go-focus"
 
     function init() {
         var carousels = $(".externalControl");
@@ -9,13 +10,6 @@ var page = (function(){
             initCarousel($(carousels[i]));
         }
 
-        // var activeGo = $(".btn-slide");
-        // var goLength = activeGo.length;
-        // for(var i = 0; i < goLength; i++){
-        //     carouselActive($(activeGo[i]));
-        // }
-
-        active();
 
         headTop();
     }
@@ -25,7 +19,13 @@ var page = (function(){
     function initCarousel($control) {
         var $buttonsNext = $control.find(".slick-next"),
             $buttonsPrev = $control.find(".slick-prev"),
-            $go = $control.find('a.go')
+            $go = $control.find('a.go'),
+            go = Array.from($go).map(function(item){return $(item)}),
+            goLength = go.length,
+            index = 0;
+
+            
+        go[index].addClass(goFocus);
 
         $control.find(".carousel").jCarouselLite({
             visible: 1,
@@ -34,27 +34,43 @@ var page = (function(){
             btnPrev: $buttonsPrev,
             btnGo: $go
         });
-    }
 
-    // function carouselActive($active) {
-    //     var $act = $active(this).children("a");
-    
-    //         if ($act.hasClass(".go-focus")) {
-    //             $act.removeClass(".go-focus")
-    //         } else {
-    //             $act.addClass(".go-focus")
-    //         }
-    // }
-    
-    function active() {
-        var $chk = $('.slick-next');
+        function buttonClick(dir) {
+            go[index].removeClass(goFocus);
 
-        if ($chk.click()) {
-            $chk.find('.btn-slide a').removeClass('.go-focus')
-        } else {
-            $chk.addClass('.go-focus')
+            if(dir) {
+                if(index === goLength - 1) {
+                    index = 0;
+                } else {
+                    index++;
+                }
+            } else {
+                if(index === 0) {
+                    index = goLength - 1;
+                } else {
+                    index--;
+                }
+            }
+
+            go[index].addClass(goFocus);
         }
+
+        // function pointClick(i) {
+        //     go[index].removeClass(goFocus);
+            
+        //     for(var i = 0; i < goLength; i++) {
+        //         go[i].addClass(goFocus);
+                
+        //     }
+        // }
+
+        $($buttonsNext).bind("click", buttonClick.bind(null, true));
+        $($buttonsPrev).bind("click", buttonClick.bind(null, false));
+        // $($go).bind("click", pointClick.bind(null, true));
+        // $($go).bind("click", pointClick.bind(null, false));
     }
+ 
+    
 
         /*Прилипалка формы входа*/
     function headTop() { 
