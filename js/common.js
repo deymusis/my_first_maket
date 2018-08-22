@@ -1,7 +1,7 @@
 var page = (function(){
     var color = "colorOrange",
-    checked = "checked",
-    goFocus = "go-focus"
+        checked = "checked",
+        goFocus = "go-focus"
 
     function init() {
         var carousels = $(".externalControl");
@@ -55,19 +55,18 @@ var page = (function(){
             go[index].addClass(goFocus);
         }
 
-        // function pointClick(i) {
-        //     go[index].removeClass(goFocus);
-            
-        //     for(var i = 0; i < goLength; i++) {
-        //         go[i].addClass(goFocus);
-                
-        //     }
-        // }
+        function pointClick(i) {
+            go[index].removeClass(goFocus);
+            index = i;
+            go[index].addClass(goFocus);
+        }
 
         $($buttonsNext).bind("click", buttonClick.bind(null, true));
         $($buttonsPrev).bind("click", buttonClick.bind(null, false));
-        // $($go).bind("click", pointClick.bind(null, true));
-        // $($go).bind("click", pointClick.bind(null, false));
+
+        for(var i = 0; i <= goLength - 1; i++) {
+            go[i].bind("click", pointClick.bind(null, i));
+        }        
     }
  
     
@@ -84,8 +83,7 @@ var page = (function(){
                 
             } else {
                 $topPanel.removeClass("topWindow").addClass("subs");
-            }; 
-            console.log("windowScroll " + windowScroll + ", topOfToppanel" + topOfToppanel); 
+            };
         });
 
             /*Галочка для подписки*/
